@@ -11,11 +11,11 @@ This guide covers my most used Nmap commands during penetration testing engageme
 * **Aggressive Scan:** `nmap -A <target>` (OS detection, version detection, script scanning, and traceroute)
 
 ---
-What is Nmap?
+#What is Nmap?
 
 Nmap (Network Mapper) is an open-source tool used for network discovery and security auditing. It helps identify hosts, open ports, services, and basic system information on a network.
 
-What can you do with Nmap?
+## What can you do with Nmap?
 
 Discover live hosts on a network
 
@@ -28,25 +28,25 @@ Perform basic operating system fingerprinting
 Build network security awareness
 
 
-Installation
+## Installation
 Linux
 sudo apt install nmap
 
-macOS
+## macOS
 brew install nmap
 
 Windows
 
 Download the official installer from: https://nmap.org
 
-🔍 Basic Usage
+## 🔍 Basic Usage
 Scan a single target
 nmap 192.168.1.1
 
-Scan a domain
+## Scan a domain
 nmap example.com
 
-🌐 Network Discovery
+## 🌐 Network Discovery
 Find active hosts in a subnet
 nmap -sn 192.168.1.0/24
 
@@ -63,7 +63,7 @@ nmap -p- target_ip
 Scan specific ports
 nmap -p 22,80,443 target_ip
 
-🔎 Service & Version Detection
+## 🔎 Service & Version Detection
 nmap -sV target_ip
 
 
@@ -92,14 +92,14 @@ nmap --script vuln target_ip
 
 Use scripts only on authorized targets.
 
-📁 Output & Reporting
+## 📁 Output & Reporting
 Normal output
 nmap -oN scan.txt target_ip
 
 XML output (for reports)
 nmap -oX scan.xml target_ip
 
-🧪 Safe Learning Environments
+## 🧪 Safe Learning Environments
 
 Practice Nmap legally using:
 
@@ -109,7 +109,7 @@ TryHackMe (Beginner rooms)
 
 Hack The Box (Academy)
 
-📚 Learning Tips
+## 📚 Learning Tips
 
 Learn networking fundamentals first
 
